@@ -5,7 +5,7 @@ const path=require('path')
 const app=express() 
 
 app.set('view engine','ejs')
-app.set('view',path.join(__dirname,'views'))
+app.set('views',path.join(__dirname,'views'))
 
 app.use(express.static(path.join(__dirname,'public')))
 app.use(express.urlencoded({extended:true}))
@@ -29,6 +29,18 @@ let posts=[
 //index route
 app.get('/posts',(req,res)=>{
     res.render('index.ejs', {posts})
+})
+
+// create route  new post
+app.get('/posts/new',(req,res)=>{
+    res.render('new.ejs')
+})
+//route for add new post
+app.post('/posts',(req,res)=>{
+    // console.log(req.body)
+    let {username,content}=req.body ;
+    posts.push({username,content})  ; // can store this post in backend also
+    res.redirect('/posts')
 })
 
 app.listen(3000,()=>{
