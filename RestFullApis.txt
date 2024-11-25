@@ -3,6 +3,8 @@ creating restFull APis
 
 resource-> posts it is   noun not a verb ->restFull APis concept used
 
+CRUD operations->create(post),read(GET),update(put,PATCH),delete request
+
 GET  /posts to get data for all posts     
           -> index(main) route
 POST /posts to add a new post                        ->create route
@@ -13,7 +15,7 @@ view all post ->index.ejs page then there will be create new post button->1)form
 
 GET /posts/:id to get one post(using id)              ->view show route create show.ejs page for showing post of specific ID
 
-PATCH /posts/:id to update specific post (using id)    ->update
+PATCH /posts/:id to update specific post (using id)    ->update/edit
 
 DELETE /posts/:id   to delete specific post            ->delete / destroy route
 
