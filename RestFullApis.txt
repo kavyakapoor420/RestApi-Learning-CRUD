@@ -1,0 +1,14 @@
+
+creating restFull APis
+
+resource-> posts it is   noun not a verb ->restFull APis concept used
+
+GET  /posts to get data for all posts               -> index(main) route
+POST /posts to add a new post                        ->create route
+GET /posts/:id to get one post(using id)              ->view 
+PATCH /posts/:id to update specific post (using id)    ->update
+DELETE /posts/:id   to delete specific post            ->delete / destroy route
+
+
+// create view folder(in which we will store our template files)
+// and public folder(to store static files like styling/css ,js)
