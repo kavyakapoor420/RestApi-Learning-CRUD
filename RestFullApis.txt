@@ -3,10 +3,17 @@ creating restFull APis
 
 resource-> posts it is   noun not a verb ->restFull APis concept used
 
-GET  /posts to get data for all posts               -> index(main) route
+GET  /posts to get data for all posts     
+          -> index(main) route
 POST /posts to add a new post                        ->create route
+2 routes -> one get /posts/new to render a form that will take  (username,content) as input (form)
+then one post route /posts to add a new post using the form data ->this will add new post into database
+
+
 GET /posts/:id to get one post(using id)              ->view 
+
 PATCH /posts/:id to update specific post (using id)    ->update
+
 DELETE /posts/:id   to delete specific post            ->delete / destroy route
 
 
