@@ -11,7 +11,7 @@ then one post route /posts to add a new post using the form data ->this will add
 
 view all post ->index.ejs page then there will be create new post button->1)form will render ->2)post request the redirect to index.ejs page with new post added
 
-GET /posts/:id to get one post(using id)              ->view 
+GET /posts/:id to get one post(using id)              ->view show route create show.ejs page for showing post of specific ID
 
 PATCH /posts/:id to update specific post (using id)    ->update
 
